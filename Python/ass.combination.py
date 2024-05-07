@@ -7,8 +7,7 @@ numbers = [2, 4, 5, 3, 1, 6, 8, 9, 7]
 num2=[]
 for i in numbers:
     for j in numbers:
-        if i==j & j==i:
-            break;
-        elif i+j==10:
-             num2.append([i,j])
+        if i==j & j==i not in num2:
+            if i+j==10:
+                num2.append([i,j])
 print(num2)
